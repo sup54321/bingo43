@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD PEACE AND DEVELOPMENT GROUP LIMITED</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
+        html { scroll-behavior: smooth; }
+
+        /* Header */
+        #header { background:#2c3e50; color:white; text-align:center; padding:60px 20px; }
+        #header h1 { font-size:2.5em; margin-bottom:10px; }
+        nav ul { list-style:none; display:flex; justify-content:center; gap:30px; margin-top:20px; }
+        nav ul li a { color:white; text-decoration:none; font-weight:bold; transition: color 0.3s; }
+        nav ul li a:hover { color:#f39c12; }
+
+        /* Section styles */
+        a.section-link { text-decoration:none; display:block; }
+        section { padding:80px 20px; display:flex; align-items:center; gap:40px; transition: background 0.3s; border-radius:10px; overflow:hidden; margin:20px; }
+        section img { width:40%; border-radius:10px; transition: transform 0.3s, box-shadow 0.3s; }
+        section img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        section .content { width:60%; color: #2c3e50; }
+        section h3 { font-size:2em; margin-bottom:15px; }
+        section p { font-size:1.1em; line-height:1.6; }
+
+        /* Read More Section */
+        .read-more-section {
+            position: relative;
+            background: url('images/read-more-bg.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin: 40px 20px;
+        }
+        .read-more-section:hover { transform: scale(1.02); }
+        .read-more-section .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .read-more-section .overlay h3 { font-size: 2.5em; margin-bottom: 15px; }
+        .read-more-section .overlay p { font-size: 1.2em; max-width: 700px; margin-bottom: 20px; }
+        .read-more-section .overlay button {
+            padding: 12px 25px;
+            font-size: 1em;
+            background:#f39c12;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            transition: background 0.3s;
+        }
+        .read-more-section .overlay button:hover { background:#e67e22; }
+
+        /* Footer */
+        footer { background:#34495e; color:white; text-align:center; padding:60px 20px; }
+        footer .button { background:#f39c12; color:white; padding:12px 30px; text-decoration:none; border-radius:5px; transition: background 0.3s; }
+        footer .button:hover { background:#e67e22; }
+
+        /* Social icons */
+        .icons { margin-top:20px; list-style:none; display:flex; justify-content:center; gap:20px; }
+        .icons li a { color:white; font-size:1.5em; text-decoration:none; transition: color 0.3s; }
+        .icons li a:hover { color:#f39c12; }
+
+        @media(max-width:768px){
+            section { flex-direction:column; text-align:center; }
+            section img, section .content { width:100%; }
+            .read-more-section { height:300px; }
+            .read-more-section .overlay h3 { font-size:2em; }
+            .read-more-section .overlay p { font-size:1em; }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>WORLD PEACE AND DEVELOPMENT GROUP LIMITED</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="who.html">Who We Are</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Section -->
+    <a href="about.html" class="section-link">
+        <section>
+            <img src="images/about-us.jpg" alt="About Us">
+            <div class="content">
+                <h3>About Us</h3>
+                <p>WORLD PEACE AND DEVELOPMENT GROUP LIMITED is dedicated to fostering global peace and sustainable development through impactful initiatives and community empowerment.</p>
+            </div>
+        </section>
+    </a>
+
+    <!-- Who We Are Section -->
+    <a href="who.html" class="section-link">
+        <section>
+            <div class="content">
+                <h3>Who We Are</h3>
+                <p>We are a passionate team of changemakers, committed to creating positive change and empowering communities worldwide.</p>
+            </div>
+            <img src="images/who-we-are.jpg" alt="Who We Are">
+        </section>
+    </a>
+
+    <!-- Mission Section -->
+    <a href="mission.html" class="section-link">
+        <section>
+            <img src="images/our-mission.jpg" alt="Our Mission">
+            <div class="content">
+                <h3>Our Mission</h3>
+                <p>To promote peace, drive sustainable development, and empower communities through innovative solutions and collaborative efforts.</p>
+            </div>
+        </section>
+    </a>
+
+    <!-- Read More Section -->
+    <a href="read.html" class="section-link">
+        <section class="read-more-section">
+            <div class="overlay">
+                <h3>Discover More</h3>
+                <p>Explore extended content about our mission, values, and initiatives for peace and development.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Join us in creating a better world</h3>
+        <a href="#" class="button">Support Our Mission</a>
+        <ul class="icons">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p>&copy; 2025 WORLD PEACE AND DEVELOPMENT GROUP LIMITED. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
